@@ -1,0 +1,82 @@
+"use client"
+import React, {useTransition , useState} from 'react'
+import Image from 'next/image'
+import TabButton from './TabButton'
+
+export default function () {
+const [tab, setTab] = useState("Habilidades")
+const [ isPending , startTransition] = useTransition()
+const handleTabChange = (id)=>{
+    startTransition(()=>{
+        setTab(id)
+    })
+}
+const TAB_DATA = [
+    {
+        title: "Habilidades",
+        id: "Habilidades",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Node.Js</li>
+                <li>React.Js</li>
+                <li>Express</li>
+                <li>Sequelize</li>
+                <li>SQL</li>
+                <li>Javascript</li>
+            </ul>
+        )
+    },
+    {
+        title: "Educacion",
+        id: "Educacion",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Full Stack - Bootcamp</li>
+                <li>Universidad Abierta Interamericana - Buenos Aires, Argentina</li>
+            </ul>
+        )
+    },
+    {
+        title: "Certificacion",
+        id: "Certificacion",
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Full Stack Web Developer</li>
+            </ul>
+        )
+    }
+]
+  return (
+    <section className='text-white '>
+        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+            <Image src="/images/about1.jpg" width={500} height={500}/>
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+                <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
+                <p className='text-base lg:text-lg'>
+                Soy desarrollador web full stack apasionado por la creación de aplicaciones web 
+                interactivas y responsivas. Tengo experiencia trabajando con JavaScript, React, 
+                Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS y Git. 
+                Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades. 
+                Trabajo en equipo y me entusiasma trabajar con otros para crear aplicaciones 
+                increíbles.
+                </p>
+                <div className='flex flex-row justify-start mt-8'>
+                    <TabButton selectTab={()=> handleTabChange("Habilidades")} active={tab === "Habilidades"}>
+                        {""}
+                        Habilidades{""}
+                    </TabButton>
+                    <TabButton selectTab={()=> handleTabChange("Educacion")} active={tab === "Educacion"}>
+                        {""}
+                        Educación{""}
+                    </TabButton>
+                    <TabButton selectTab={()=> handleTabChange("Certificacion")} active={tab === "Certificacion"}>
+                        {""}
+                        Certificación{""}
+                    </TabButton>
+                </div>
+                <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
+            </div>
+        </div>
+    </section>
+  )
+}
