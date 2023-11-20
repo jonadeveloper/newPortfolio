@@ -47,8 +47,8 @@ const TAB_DATA = [
     }
 ]
   return (
-    <section className='text-white '>
-        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+    <section className='text-white h-screen'>
+        <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16' id='sobre-mi'>
             <Image src="/images/about1.jpg" width={500} height={500}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
