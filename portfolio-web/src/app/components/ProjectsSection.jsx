@@ -34,13 +34,13 @@ const projectsData = [
 ]
 
 export default function ProjectsSection() {
-    const [tag,setTag] = useState("All");
-    const handleTagChange = (tag)=>{
-        setTag(tag)
-    }
-    const filterProjects = projectsData.filter((project)=>{
+    const [ tag , setTag ] = useState("All");
+    const handleTagChange = (newTag)=>{
+        setTag(newTag)
+    };
+    const filterProjects = projectsData.filter((project)=>
         project.tag.includes(tag)
-    })
+    );
   return (
     <>
         <h2 className='text-center text-4xl font-bold text-white'>Mis proyectos</h2>
