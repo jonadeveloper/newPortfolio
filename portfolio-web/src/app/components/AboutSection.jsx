@@ -54,11 +54,12 @@ const TAB_DATA = [
                 <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
                 <p className='text-base lg:text-lg'>
                 Soy desarrollador web full stack apasionado por la creación de aplicaciones web 
-                interactivas y responsivas. Tengo experiencia trabajando con JavaScript, React, 
-                Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS y Git. 
+                interactivas y responsivas.
                 Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades. 
-                Trabajo en equipo y me entusiasma trabajar con otros para crear aplicaciones 
-                increíbles.
+                <br/>
+                Tambien me gusta compartir mi conocimiento mediante la creacion de contenido en redes 
+                sociales y la redacción de articulos en diversos portales web.
+
                 </p>
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton selectTab={()=> handleTabChange("Habilidades")} active={tab === "Habilidades"}>

@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, {useState} from 'react'
 import GitHubIcon from '../../../public/github-icon.svg'
 import LinkedinIcon from '../../../public/linkedin-icon.svg'
 import Link from 'next/link'
@@ -6,14 +7,38 @@ import Image from 'next/image'
 
 
 export default function EmailSection() {
+    const [emailSubmited,setEmailSubmited] = useState(false);
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        const data = {
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value
+        }
+        const JSONdata = JSON.stringify(data);
+        const endpoint = "/api/send";
+        const options = {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSONdata
+        }
+        const response = await fetch(endpoint,options);
+        const resData = await response.json();
+        if(response.status === 200){
+            console.log("Mensaje enviado")
+            setEmailSubmited(true)
+        }
+    }
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id='contacto'>
         <div>
             <h5 className='text-xl font-bold text-white my-2'>Contactame</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
             {""}
             Actualmente estoy buscando nuevas oportunidades, 
-            mi bandeja de entrada siempre es si tienes alguna pregunta.
+            mi bandeja de entrada siempre esta a tu disposición si tienes alguna pregunta.
             </p>
             <div className='socials flex flex-row gap-2'>
                 <Link href='github.com'>
@@ -25,7 +50,7 @@ export default function EmailSection() {
             </div>
         </div>
         <div>
-            <form className='flex flex-col'>
+            <form className='flex flex-col' onSubmit={handleSubmit}>
                 <div className='mb-6'>
                 <label htmlFor="email" 
                 type="email" 
@@ -33,6 +58,7 @@ export default function EmailSection() {
                     Tu email
                 </label>
                 <input type="email" 
+                name='email'
                 id='email' 
                 required 
                 className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full py-2.5'
@@ -45,6 +71,7 @@ export default function EmailSection() {
                     Asunto
                 </label>
                 <input type="text" 
+                name='subject'
                 id='subject' 
                 required 
                 className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full py-2.5'
@@ -64,6 +91,13 @@ export default function EmailSection() {
                 className='bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
                     Enviar mensaje
                 </button>
+                {
+                    emailSubmited && (
+                        <p className='text-green-500 text-sm mt-2'>
+                            mensaje enviado correctamente
+                        </p>
+                    )
+                }
             </form>
         </div>
     </section>

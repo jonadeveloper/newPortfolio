@@ -44,7 +44,7 @@ export default function ProjectsSection() {
   return (
     <>
         <h2 className='text-center text-4xl font-bold text-white'>Mis proyectos</h2>
-        <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+        <div className='text-white flex flex-row justify-center items-center gap-2 py-6' id='proyectos'>
             <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
             <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
         </div>
