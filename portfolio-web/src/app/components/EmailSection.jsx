@@ -50,6 +50,11 @@ export default function EmailSection() {
             </div>
         </div>
         <div>
+        {emailSubmited ? (
+        <p className="text-green-500 text-sm mt-2">
+            mensaje enviado correctamente!
+        </p>
+        ) : (
             <form className='flex flex-col' onSubmit={handleSubmit}>
                 <div className='mb-6'>
                 <label htmlFor="email" 
@@ -91,14 +96,9 @@ export default function EmailSection() {
                 className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
                     Enviar mensaje
                 </button>
-                {
-                    emailSubmited && (
-                        <p className='text-green-500 text-sm mt-2'>
-                            mensaje enviado correctamente
-                        </p>
-                    )
-                }
+                
             </form>
+            )}
         </div>
     </section>
     
