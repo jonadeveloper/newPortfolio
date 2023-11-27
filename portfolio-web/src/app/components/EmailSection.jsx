@@ -33,7 +33,7 @@ export default function EmailSection() {
     }
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id='contacto'>
-        <div>
+        <div className='z-10'>
             <h5 className='text-xl font-bold text-white my-2'>Contactame</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
             {""}
@@ -88,7 +88,7 @@ export default function EmailSection() {
                 placeholder='Vamos a hablar acerca de...'/>
                 </div>
                 <button type='submit'
-                className='bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
+                className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
                     Enviar mensaje
                 </button>
                 {
