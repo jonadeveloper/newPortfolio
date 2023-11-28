@@ -3,9 +3,22 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function HeroSection() {
-  return (
+        const handleDownloadPDF = () => {
+        const pdfFilePath = '/images/JonatanVillalva-fullStackWebDeveloper.pdf';
+    
+        const link = document.createElement('a');
+        link.href = pdfFilePath;
+        link.download = 'jv_cv.pdf';
+        document.body.appendChild(link);
+      
+        link.click();
+      
+        document.body.removeChild(link);
+        };
+    return (
     <section className='lg:py-16'>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
             <motion.div 
@@ -41,8 +54,8 @@ export default function HeroSection() {
                     Saludos cordiales. Bienvenidos a mi portfolio profesional.
                 </p>
                 <div>
-                    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-400 via-primary-800 to-secondary-500 hover:bg-slate-200 text-white'>Contratame</button>
-                    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-400 via-primary-800 to-secondary-500 hover:bg-slate-800 text-white mt-3'>
+                    <Link href="/#contacto" className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-400 via-primary-800 to-secondary-500 hover:bg-slate-200 text-white'>Contratame</Link>
+                    <button onClick={handleDownloadPDF} className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-400 via-primary-800 to-secondary-500 hover:bg-slate-800 text-white mt-3'>
                         <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-2 py-2'>Descarga mi CV</span>
                     </button>
                 </div>

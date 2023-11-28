@@ -7,30 +7,30 @@ import {motion,useInView} from 'framer-motion'
 const projectsData = [
     {
         id:1,
-        title:'poryecto web',
-        description: 'hola soy jona dev',
-        image: '/images/hero1.png',
+        title:'Studio Bad Dog',
+        description: 'Web multipagina de una agencia de servicios de desarrollo web.',
+        image: '/images/projects/project01.jpeg',
         tag: ["All"],
-        gitUrl: "/",
-        previewUrl:"/"
+        gitUrl: "https://github.com/Jonatan-R-Villalva/estudio-badDog",
+        previewUrl:"https://estudio-bad-dog.vercel.app/"
     },
     {
         id:2,
-        title:'poryecto web',
-        description: 'hola soy jona dev',
-        image: '/images/hero1.png',
+        title:'Clon de Tesla',
+        description: 'Clon de website oficial de la empresa automotriz tesla.',
+        image: '/images/projects/project02.jpeg',
         tag: ["All","Web"],
-        gitUrl: "/",
-        previewUrl:"/"
+        gitUrl: "https://github.com/Jonatan-R-Villalva/clonTesla",
+        previewUrl:"https://clon-tesla.vercel.app/"
     },
     {
         id:3,
-        title:'poryecto web',
-        description: 'hola soy jona dev',
-        image: '/images/hero1.png',
+        title:'Portfolio profesional',
+        description: 'Portfolio web profesional para desarrollador web.',
+        image: '/images/projects/project03.jpeg',
         tag: ["All","Web"],
-        gitUrl: "/",
-        previewUrl:"/"
+        gitUrl: "https://github.com/Jonatan-R-Villalva/portfolio",
+        previewUrl:"https://jvdesarrolloweb.vercel.app/"
     }
 ]
 
