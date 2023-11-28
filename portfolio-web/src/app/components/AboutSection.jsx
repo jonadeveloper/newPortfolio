@@ -3,7 +3,7 @@ import React, {useTransition , useState} from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
 
-export default function () {
+export default function AboutSection() {
 const [tab, setTab] = useState("Habilidades")
 const [ isPending , startTransition] = useTransition()
 const handleTabChange = (id)=>{
