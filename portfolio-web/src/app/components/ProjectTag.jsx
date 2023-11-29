@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ({name, onClick , isSelected}) {
+export default function ProjectTag({name, onClick , isSelected}) {
     const buttonStyles = isSelected 
     ? "text-white border-primary-500"
     : "text-[#ADB7BE] border-slate-500 hover:border-white"
