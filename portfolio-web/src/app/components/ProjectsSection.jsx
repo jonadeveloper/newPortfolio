@@ -31,6 +31,23 @@ const projectsData = [
         tag: ["All","Web"],
         gitUrl: "https://github.com/Jonatan-R-Villalva/portfolio",
         previewUrl:"https://jvdesarrolloweb.vercel.app/"
+    },
+    {
+        id:3,
+        title:'Portfolio profesional',
+        description: 'Portfolio web profesional para desarrollador web.',
+        image: '/images/projects/project03.jpeg',
+        tag: ["All","Web"],
+        gitUrl: "https://github.com/Jonatan-R-Villalva/portfolio",
+        previewUrl:"https://jvdesarrolloweb.vercel.app/"
+    },{
+        id:5,
+        title:'Movie Source',
+        description: 'Apliación web para buscar peliculas y ver sus trailers.',
+        image: '/images/projects/project05.jpeg',
+        tag: ["All","Web"],
+        gitUrl: "https://github.com/Jonatan-R-Villalva/movie-source",
+        previewUrl:"https://movie-source-self.vercel.app/"
     }
 ]
 
