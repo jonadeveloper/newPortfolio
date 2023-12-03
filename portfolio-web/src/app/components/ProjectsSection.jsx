@@ -44,7 +44,7 @@ const projectsData = [
         id:5,
         title:'Movie Source',
         description: 'Apliación web para buscar peliculas y ver sus trailers.',
-        image: '/images/projects/project05.jpeg',
+        image: '/images/projects/project05.jpg',
         tag: ["All","Web"],
         gitUrl: "https://github.com/Jonatan-R-Villalva/movie-source",
         previewUrl:"https://movie-source-self.vercel.app/"
