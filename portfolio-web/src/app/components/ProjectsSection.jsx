@@ -33,13 +33,13 @@ const projectsData = [
         previewUrl:"https://jvdesarrolloweb.vercel.app/"
     },
     {
-        id:3,
-        title:'Portfolio profesional',
-        description: 'Portfolio web profesional para desarrollador web.',
-        image: '/images/projects/project03.jpeg',
+        id:4,
+        title:'Remove-Bg',
+        description: 'Aplicación web para quitar fondo de imagenes y descargar.',
+        image: '/images/projects/project04.jpg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/portfolio",
-        previewUrl:"https://jvdesarrolloweb.vercel.app/"
+        gitUrl: "https://github.com/Jonatan-R-Villalva/remove-bg",
+        previewUrl:"https://remove-bg-g2am.vercel.app/"
     },{
         id:5,
         title:'Movie Source',
