@@ -52,7 +52,7 @@ const projectsData = [
     ,{
         id:6,
         title:'Spotify Clone',
-        description: 'Clon de App Spotify en su versión Desktop.',
+        description: 'Clon de App de musica/podcasts Spotify en su versión Desktop.',
         image: '/images/projects/project06.jpg',
         tag: ["All","Web"],
         gitUrl: "https://github.com/Jonatan-R-Villalva/spotify-clone",
