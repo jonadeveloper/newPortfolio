@@ -49,6 +49,15 @@ const projectsData = [
         gitUrl: "https://github.com/Jonatan-R-Villalva/movie-source",
         previewUrl:"https://movie-source-self.vercel.app/"
     }
+    ,{
+        id:6,
+        title:'Spotify Clone',
+        description: 'Clon de App Spotify en su versión Desktop.',
+        image: '/images/projects/project06.jpg',
+        tag: ["All","Web"],
+        gitUrl: "https://github.com/Jonatan-R-Villalva/spotify-clone",
+        previewUrl:"https://spotify-clone-six-swart.vercel.app/"
+    }
 ]
 
 export default function ProjectsSection() {
