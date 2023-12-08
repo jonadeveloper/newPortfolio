@@ -11,7 +11,7 @@ const projectsData = [
         description: 'Web multipagina de una agencia de servicios de desarrollo web.',
         image: '/images/projects/project01.jpeg',
         tag: ["All"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/estudio-badDog",
+        gitUrl: "https://github.com/jonadeveloper/estudio-badDog",
         previewUrl:"https://estudio-bad-dog.vercel.app/"
     },
     {
@@ -20,7 +20,7 @@ const projectsData = [
         description: 'Clon de website oficial de la empresa automotriz tesla.',
         image: '/images/projects/project02.jpeg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/clonTesla",
+        gitUrl: "https://github.com/jonadeveloper/clonTesla",
         previewUrl:"https://clon-tesla.vercel.app/"
     },
     {
@@ -29,7 +29,7 @@ const projectsData = [
         description: 'Portfolio web profesional para desarrollador web.',
         image: '/images/projects/project03.jpeg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/portfolio",
+        gitUrl: "https://github.com/jonadeveloper/portfolio",
         previewUrl:"https://jvdesarrolloweb.vercel.app/"
     },
     {
@@ -38,7 +38,7 @@ const projectsData = [
         description: 'Aplicación web para quitar fondo de imagenes y descargar.',
         image: '/images/projects/project04.jpg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/remove-bg",
+        gitUrl: "https://github.com/jonadeveloper/remove-bg",
         previewUrl:"https://remove-bg-g2am.vercel.app/"
     },{
         id:5,
@@ -46,7 +46,7 @@ const projectsData = [
         description: 'Apliación web para buscar peliculas y ver sus trailers.',
         image: '/images/projects/project05.jpg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/movie-source",
+        gitUrl: "https://github.com/jonadeveloper/movie-source",
         previewUrl:"https://movie-source-self.vercel.app/"
     }
     ,{
@@ -55,7 +55,7 @@ const projectsData = [
         description: 'Clon de App de musica/podcasts Spotify en su versión Desktop.',
         image: '/images/projects/project06.jpg',
         tag: ["All","Web"],
-        gitUrl: "https://github.com/Jonatan-R-Villalva/spotify-clone",
+        gitUrl: "https://github.com/jonadeveloper/spotify-clone",
         previewUrl:"https://spotify-clone-six-swart.vercel.app/"
     }
 ]
