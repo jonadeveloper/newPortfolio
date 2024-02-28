@@ -17,12 +17,12 @@ const TAB_DATA = [
         id: "Habilidades",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Node.Js</li>
-                <li>React.Js</li>
-                <li>Express</li>
-                <li>Sequelize</li>
-                <li>SQL</li>
                 <li>Javascript</li>
+                <li>Node.Js</li>
+                <li>Express</li>
+                <li>React.Js</li>
+                <li>SQL</li>
+                <li>Sequelize</li>
             </ul>
         )
     },
@@ -49,8 +49,8 @@ const TAB_DATA = [
   return (
     <section className='text-white h-screen'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16' id='sobre-mi'>
-            <Image src="/images/about1.jpg" width={500} height={500}/>
-            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+            <Image src="/images/about.png" width={500} height={500} />
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full pt-6'>
                 <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
                 <p className='text-base lg:text-lg'>
                 Soy desarrollador web full stack apasionado por la creación de aplicaciones web 
@@ -58,7 +58,7 @@ const TAB_DATA = [
                 Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades. 
                 <br/>
                 Tambien me gusta compartir mi conocimiento mediante la creacion de contenido en redes 
-                sociales y la redacción de articulos en diversos portales web.
+                sociales.
 
                 </p>
                 <div className='flex flex-row justify-start mt-8'>
