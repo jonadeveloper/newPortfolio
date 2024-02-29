@@ -26,14 +26,14 @@ export default function HeroSection() {
             animate={{opacity: 1, scale: 1}} 
             transition={{duration: 0.5}} 
             className='col-span-8 place-self-center text-center sm:text-left justify-self-start'>
-                <h1 className="text-white mb-4  text-4xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold">
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-800 to-secondary-500'>
+                <h1 className="text-white mb-4  text-2xl sm:text-4xl lg:text-4xl lg:leading-normal font-extrabold">
+                    <span className='text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary-800 to-secondary-500'>
                         Hola, soy {""}
                     </span>
                     <br/>
                     <TypeAnimation
                     sequence={[
-                    'Jona',
+                    'Jona Villalva',
                     1000,
                     'Web Developer',
                     1000,
@@ -41,7 +41,7 @@ export default function HeroSection() {
                     1000,
                     'Content Creator',
                     1000,
-                    'Jona',
+                    'Jona Villalva',
                     1000
                     ]}
                     wrapper="span"
@@ -65,7 +65,7 @@ export default function HeroSection() {
             animate={{opacity: 1, scale: 1}} 
             transition={{duration: 0.5}} 
             className='col-span-4 place-self-center mb-6 mt-4 lg:mt-0'>
-                <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative'>
+                <div className='rounded-full bg-[#512892] w-[350px] h-[350px] lg:w-[350px] lg:h-[350px] relative'>
                     <Image
                     src= "/images/hero2.png"
                     alt='hero-image'
