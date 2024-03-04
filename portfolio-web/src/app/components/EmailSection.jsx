@@ -2,6 +2,8 @@
 import React, {useState} from 'react'
 import GitHubIcon from '../../../public/github-icon.svg'
 import LinkedinIcon from '../../../public/linkedin-icon.svg'
+import InstagramIcon from '../../../public/instagram-icon.svg'
+import YoutubeIcon from '../../../public/youtube-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -46,6 +48,12 @@ export default function EmailSection() {
                 </Link>
                 <Link href='linkedin.com'>
                     <Image src={LinkedinIcon} alt='linkedin icon'/>
+                </Link>
+                <Link href='linkedin.com'>
+                    <Image src={InstagramIcon} alt='linkedin icon'/>
+                </Link>
+                <Link href='linkedin.com'>
+                    <Image src={YoutubeIcon} alt='linkedin icon'/>
                 </Link>
             </div>
         </div>
