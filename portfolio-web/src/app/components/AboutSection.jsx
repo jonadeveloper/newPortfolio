@@ -17,7 +17,8 @@ const TAB_DATA = [
         id: "Habilidades",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Javascript</li>
+                <li>HTML/CSS/JavaScript</li>
+                <li>Git/GitHub</li>
                 <li>Node.Js</li>
                 <li>Express</li>
                 <li>React.Js</li>
@@ -72,7 +73,7 @@ const TAB_DATA = [
                     </TabButton>
                     <TabButton selectTab={()=> handleTabChange("Certificacion")} active={tab === "Certificacion"}>
                         {""}
-                        Certificación{""}
+                        Certificaciones{""}
                     </TabButton>
                 </div>
                 <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
