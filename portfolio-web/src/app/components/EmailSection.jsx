@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import GitHubIcon from '../../../public/github-icon.svg'
 import LinkedinIcon from '../../../public/linkedin-icon.svg'
 import EmailIcon from '../../../public/emails-icon.svg'
+import WhatsappIcon from '../../../public/whatsapp-icon.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -48,8 +49,11 @@ export default function EmailSection() {
                 <Link href='https://www.linkedin.com/in/jonatan-villalva-fullstack-developer/' target='_blank'>
                     <Image src={LinkedinIcon} alt='linkedin-icon'/>
                 </Link>
-                <Link href='https://www.youtube.com/channel/UCHiIe9Ce3T4tDpP0_XPfTNA' target='_blank'>
-                    <Image src={EmailIcon} alt='youtube-icon'/>
+                <Link href='mailto:jvillalva.sistemas@gmail.com' target='_blank'>
+                    <Image src={EmailIcon} alt='email-icon'/>
+                </Link>
+                <Link href='https://wa.me/541138619940?text=Hola,%20quiero%20contactarte' target='_blank'>
+                    <Image src={WhatsappIcon} alt='whatsapp-icon'/>
                 </Link>
             </div>
         </div>
