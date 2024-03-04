@@ -69,7 +69,7 @@ export default function HeroSection() {
                     <Image
                     src= "/images/hero2.png"
                     alt='hero-image'
-                    className='rounded-full absolute tranform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                    className='avatar rounded-full absolute tranform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
                     width= {350}
                     height={350}
                     />               

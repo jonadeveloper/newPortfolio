@@ -10,7 +10,7 @@ const projectsData = [
         title:'Studio Bad Dog',
         description: 'Web multipagina de una agencia de servicios de desarrollo web.',
         image: '/images/projects/project01.jpeg',
-        tag: ["All"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/estudio-badDog",
         previewUrl:"https://estudio-bad-dog.vercel.app/"
     },
@@ -19,7 +19,7 @@ const projectsData = [
         title:'Clon de Tesla',
         description: 'Clon de website oficial de la empresa automotriz tesla.',
         image: '/images/projects/project02.jpeg',
-        tag: ["All","Web"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/clonTesla",
         previewUrl:"https://clon-tesla.vercel.app/"
     },
@@ -28,7 +28,7 @@ const projectsData = [
         title:'Portfolio profesional',
         description: 'Portfolio web profesional para desarrollador web.',
         image: '/images/projects/project03.jpeg',
-        tag: ["All","Web"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/portfolio",
         previewUrl:"https://jvdesarrolloweb.vercel.app/"
     },
@@ -37,7 +37,7 @@ const projectsData = [
         title:'Remove-Bg',
         description: 'Aplicación web para quitar fondo de imagenes y descargar.',
         image: '/images/projects/project04.jpg',
-        tag: ["All","Web"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/remove-bg",
         previewUrl:"https://remove-bg-g2am.vercel.app/"
     },{
@@ -45,7 +45,7 @@ const projectsData = [
         title:'Movie Source',
         description: 'Apliación web para buscar peliculas y ver sus trailers.',
         image: '/images/projects/project05.jpg',
-        tag: ["All","Web"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/movie-source",
         previewUrl:"https://movie-source-self.vercel.app/"
     }
@@ -54,7 +54,7 @@ const projectsData = [
         title:'Spotify Clone',
         description: 'Clon de App de musica/podcasts Spotify en su versión Desktop.',
         image: '/images/projects/project06.jpg',
-        tag: ["All","Web"],
+        tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/spotify-clone",
         previewUrl:"https://spotify-clone-six-swart.vercel.app/"
     }

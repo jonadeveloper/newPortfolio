@@ -17,13 +17,11 @@ const TAB_DATA = [
         id: "Habilidades",
         content: (
             <ul className='list-disc pl-2'>
-                <li>HTML/CSS/JavaScript</li>
-                <li>Git/GitHub</li>
-                <li>Node.Js</li>
-                <li>Express</li>
+                <li>Html - Css - JavaScript</li>
+                <li>Git - GitHub</li>
+                <li>Node.Js - Express</li>
                 <li>React.Js</li>
                 <li>SQL</li>
-                <li>Sequelize</li>
             </ul>
         )
     },
@@ -32,8 +30,9 @@ const TAB_DATA = [
         id: "Educacion",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Full Stack - Bootcamp</li>
-                <li>Universidad Abierta Interamericana - Buenos Aires, Argentina</li>
+                <li>C.E.N.S N° 451</li>
+                <li>Henry Bootcamp</li>
+                <li>Universidad Abierta Interamericana - UAI</li>
             </ul>
         )
     },
@@ -42,7 +41,9 @@ const TAB_DATA = [
         id: "Certificacion",
         content: (
             <ul className='list-disc pl-2'>
-                <li>Full Stack Web Developer</li>
+                <li>Bachiller en ciencias sociales - Graduado</li>
+                <li>Full Stack Web Developer - Graduado</li>
+                <li>Analista programador - En curso</li>
             </ul>
         )
     }
