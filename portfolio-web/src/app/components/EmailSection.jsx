@@ -43,17 +43,17 @@ export default function EmailSection() {
             mi bandeja de entrada siempre esta a tu disposición si tienes alguna pregunta.
             </p>
             <div className='socials flex flex-row gap-2'>
-                <Link href='github.com'>
-                    <Image src={GitHubIcon} alt='github icon'/>
+                <Link href='https://github.com/jonadeveloper' target='_blank'>
+                    <Image src={GitHubIcon} alt='github-icon'/>
                 </Link>
-                <Link href='linkedin.com'>
-                    <Image src={LinkedinIcon} alt='linkedin icon'/>
+                <Link href='https://www.linkedin.com/in/jonatan-villalva-fullstack-developer/' target='_blank'>
+                    <Image src={LinkedinIcon} alt='linkedin-icon'/>
                 </Link>
-                <Link href='linkedin.com'>
-                    <Image src={InstagramIcon} alt='linkedin icon'/>
+                <Link href='https://www.instagram.com/jona.dev_ok/' target='_blank'>
+                    <Image src={InstagramIcon} alt='instagram-icon'/>
                 </Link>
-                <Link href='linkedin.com'>
-                    <Image src={YoutubeIcon} alt='linkedin icon'/>
+                <Link href='https://www.youtube.com/channel/UCHiIe9Ce3T4tDpP0_XPfTNA' target='_blank'>
+                    <Image src={YoutubeIcon} alt='youtube-icon'/>
                 </Link>
             </div>
         </div>
