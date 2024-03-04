@@ -27,7 +27,7 @@ const achievementList = [
     },
     {
         metric:'Contenido RRSS',
-        value:'30',
+        value:'50',
         postfix: "+"
     },
 ]

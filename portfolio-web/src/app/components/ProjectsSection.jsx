@@ -79,7 +79,8 @@ export default function ProjectsSection() {
         <h2 className='text-center text-4xl font-bold text-white'>Mis proyectos</h2>
         <div className='text-white flex flex-row justify-center items-center gap-2 py-6' id='proyectos'>
             <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
-            <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
+            <ProjectTag onClick={handleTagChange} name="frontend" isSelected={tag === "frontend"} />
+            <ProjectTag onClick={handleTagChange} name="backend" isSelected={tag === "backend"} />
         </div>
         <ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>{filterProjects.map((project,index)=>(
             <motion.li 
