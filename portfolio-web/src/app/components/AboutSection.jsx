@@ -51,13 +51,15 @@ const TAB_DATA = [
   return (
     <section className='text-white h-screen'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16' id='sobre-mi'>
-            <Image src="/images/about.png" width={500} height={500} />
+            <Image src="/images/about.png" width={500} height={500}/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full pt-6'>
                 <h2 className='text-4xl font-bold text-white mb-4'>Sobre mi</h2>
                 <p className='text-base lg:text-lg'>
-                Soy desarrollador web full stack apasionado por la creación de aplicaciones web 
+                Soy un desarrollador web full stack y analista programador en formación. 
+                Me considero un apasionado por la tecnologia y la creación de aplicaciones web 
                 interactivas y responsivas.
-                Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades. 
+                Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades para mantenerme al 
+                dia con las tendencias del mercado tech. 
                 <br/>
                 Tambien me gusta compartir mi conocimiento mediante la creacion de contenido en redes 
                 sociales.
