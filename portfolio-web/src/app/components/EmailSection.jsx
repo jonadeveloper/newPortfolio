@@ -11,8 +11,8 @@ import Image from 'next/image'
 export default function EmailSection() {
     
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id='contacto'>
-        <div className='z-10'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-8 gap-4' id='contacto'>
+        <div className='z-10 m-auto'>
             <h5 className='text-xl font-bold text-white my-2'>Contactame</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
             {""}
@@ -35,55 +35,10 @@ export default function EmailSection() {
             </div>
         </div>
         <div>
-        {/* {emailSubmited ? (
-        <p className="text-green-500 text-sm mt-2">
-            mensaje enviado correctamente!
-        </p>
-        ) : (
-            <form className='flex flex-col' onSubmit={handleSubmit}>
-                <div className='mb-6'>
-                <label htmlFor="email" 
-                type="email" 
-                className='text-white block mb-2 text-sm font-medium'>
-                    Tu email
-                </label>
-                <input type="email" 
-                name='email'
-                id='email' 
-                required 
-                className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full py-2.5'
-                placeholder='example@example.com' />
-                </div>
-                <div className='mb-6'>
-                <label htmlFor="subject" 
-                type="text" 
-                className='text-white block mb-2 text-sm font-medium'>
-                    Asunto
-                </label>
-                <input type="text" 
-                name='subject'
-                id='subject' 
-                required 
-                className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full py-2.5'
-                placeholder='example@example.com' />
-                </div>
-                <div className='mb-6'>
-                <label htmlFor="message"
-                className='text-white block text-sm mb-2 font-medium'>
-                    Mensaje
-                </label>
-                <textarea name="message"
-                id="message" 
-                className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full py-2.5'
-                placeholder='Vamos a hablar acerca de...'/>
-                </div>
-                <button type='submit'
-                className='bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
-                    Enviar mensaje
-                </button>
-                
-            </form>
-            )} */}
+        <h5 className='text-xl text-center font-bold text-white my-2 pb-3'>Estoy aqui</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52467.916956628345!2d-58.28791971186763!3d-34.724223118572695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710198661332!5m2!1ses-419!2sar" 
+        className="w-full h-[60vh]">
+        </iframe>
         </div>
     </section>
     
