@@ -9,30 +9,7 @@ import Image from 'next/image'
 
 
 export default function EmailSection() {
-    const [emailSubmited,setEmailSubmited] = useState(false);
-    const handleSubmit = async (e)=>{
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value
-        }
-        const JSONdata = JSON.stringify(data);
-        const endpoint = "/api/send";
-        const options = {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata
-        }
-        const response = await fetch(endpoint,options);
-        const resData = await response.json();
-        if(response.status === 200){
-            console.log("Mensaje enviado")
-            setEmailSubmited(true)
-        }
-    }
+    
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id='contacto'>
         <div className='z-10'>
@@ -40,7 +17,7 @@ export default function EmailSection() {
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
             {""}
             Actualmente estoy buscando nuevas oportunidades, 
-            mi bandeja de entrada siempre esta a tu disposición si tienes alguna pregunta.
+            mi bandeja de entrada siempre esta a tu disposición si tenes alguna pregunta.
             </p>
             <div className='socials flex flex-row gap-2'>
                 <Link href='https://github.com/jonadeveloper' target='_blank'>
@@ -58,7 +35,7 @@ export default function EmailSection() {
             </div>
         </div>
         <div>
-        {emailSubmited ? (
+        {/* {emailSubmited ? (
         <p className="text-green-500 text-sm mt-2">
             mensaje enviado correctamente!
         </p>
@@ -106,7 +83,7 @@ export default function EmailSection() {
                 </button>
                 
             </form>
-            )}
+            )} */}
         </div>
     </section>
     
