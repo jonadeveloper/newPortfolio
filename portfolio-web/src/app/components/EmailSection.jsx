@@ -48,7 +48,11 @@ export default function EmailSection() {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-    />
+        />
+        <p className='text-[#ADB7BE] mb-4 max-w-md'>
+            {""}
+        E-mail: jvillalva.sistemas@gmail.com
+        </p>
         </div>
     </section>
     

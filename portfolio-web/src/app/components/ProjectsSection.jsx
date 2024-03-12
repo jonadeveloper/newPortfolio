@@ -25,39 +25,22 @@ const projectsData = [
     },
     {
         id:3,
-        title:'Portfolio profesional',
-        description: 'Portfolio web profesional para desarrollador web.',
-        image: '/images/projects/project03.jpeg',
-        tag: ["All","frontend"],
-        gitUrl: "https://github.com/jonadeveloper/portfolio",
-        previewUrl:"https://jvdesarrolloweb.vercel.app/"
-    },
-    {
-        id:4,
         title:'Remove-Bg',
         description: 'Aplicación web para quitar fondo de imagenes y descargar.',
-        image: '/images/projects/project04.jpg',
+        image: '/images/projects/project03.jpg',
         tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/remove-bg",
         previewUrl:"https://remove-bg-g2am.vercel.app/"
     },{
-        id:5,
+        id:4,
         title:'Movie Source',
         description: 'Apliación web para buscar peliculas y ver sus trailers.',
-        image: '/images/projects/project05.jpg',
+        image: '/images/projects/project04.jpg',
         tag: ["All","frontend"],
         gitUrl: "https://github.com/jonadeveloper/movie-source",
         previewUrl:"https://movie-source-self.vercel.app/"
     }
-    ,{
-        id:6,
-        title:'Spotify Clone',
-        description: 'Clon de App de musica/podcasts Spotify en su versión Desktop.',
-        image: '/images/projects/project06.jpg',
-        tag: ["All","frontend"],
-        gitUrl: "https://github.com/jonadeveloper/spotify-clone",
-        previewUrl:"https://spotify-clone-six-swart.vercel.app/"
-    }
+    ,
 ]
 
 export default function ProjectsSection() {
